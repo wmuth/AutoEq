@@ -1,0 +1,38 @@
+optimizer:
+  min_f: 20
+  max_f: 20000
+  max_time: null
+  min_change_rate: null
+  min_std: null
+filter_defaults:
+  min_fc: 20
+  max_fc: 20000
+  min_q: 0.18248
+  max_q: 10.0
+  min_gain: -6
+  max_gain: 6
+filters:
+  - type: PEAKING
+    min_fc: 20
+    max_fc: 99
+  - type: PEAKING
+    min_fc: 100
+    max_fc: 199
+  - type: PEAKING
+    min_fc: 200
+    max_fc: 399
+  - type: PEAKING
+    min_fc: 400
+    max_fc: 999
+  - type: PEAKING
+    min_fc: 1000
+    max_fc: 2999
+  - type: PEAKING
+    min_fc: 3000
+    max_fc: 5999
+  - type: PEAKING
+    min_fc: 6000
+    max_fc: 11999
+  - type: PEAKING
+    min_fc: 12000
+    max_fc: 20000
